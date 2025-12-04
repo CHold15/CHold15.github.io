@@ -1,40 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>LifeLedger – Personal Finance Manager</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 2rem; }
-        h1 { color: #2c3e50; }
-        .card { border: 1px solid #ddd; padding: 1rem 1.5rem; border-radius: 8px; max-width: 800px; }
-    </style>
+  <meta charset="UTF-8">
+  <title>LifeLedger – Personal Finance Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1, h2 {
+      color: #38bdf8;
+    }
+    .card {
+      background: #020617;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,.4);
+    }
+    ul {
+      line-height: 1.8;
+    }
+    .btn {
+      display: inline-block;
+      background: #38bdf8;
+      color: #020617;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    iframe {
+      width: 100%;
+      height: 480px;
+      border-radius: 12px;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+
     <h1>LifeLedger – Personal Finance Manager</h1>
+    <p><strong>COP 4331 – Object-Oriented Design</strong></p>
+    <p><strong>Author:</strong> Charlie Holder</p>
+
     <div class="card">
-        <p><strong>Course:</strong> COP 4331 – Object-Oriented Design</p>
-        <p>LifeLedger is a Java Swing desktop application that helps users track accounts, transactions,
-           budgets, and spending reports. It showcases MVC architecture, UML-driven design, and multiple
-           design patterns.</p>
-
-        <h2>Features</h2>
-        <ul>
-            <li>Manage multiple financial accounts</li>
-            <li>Record income and expense transactions</li>
-            <li>View total balance across accounts</li>
-            <li>Extensible design for budgets, reports, and reminders</li>
-        </ul>
-
-        <h2>Technologies</h2>
-        <ul>
-            <li>Java 17</li>
-            <li>Swing GUI</li>
-            <li>JUnit 5</li>
-            <li>Design patterns (MVC, Observer, Strategy, Command, Singleton, Repository)</li>
-        </ul>
-
-        <h2>Demo</h2>
-        <p>Embed or link your YouTube demo here.</p>
+      <h2>Project Overview</h2>
+      <p>
+        LifeLedger is a Java Swing desktop application that allows users to manage financial
+        accounts, track income and expenses, view total balances, define budgets, generate reports,
+        and manage bill reminders. The system was designed using full Object-Oriented Design,
+        UML modeling, MVC architecture, and multiple design patterns.
+      </p>
     </div>
+
+    <div class="card">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Create and manage multiple financial accounts</li>
+        <li>Add income and expense transactions</li>
+        <li>Automatic balance updates</li>
+        <li>Category-based reporting and summaries</li>
+        <li>Bill reminders and future extensibility</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>Java 17</li>
+        <li>Java Swing (GUI)</li>
+        <li>MVC Architecture</li>
+        <li>JUnit 5</li>
+        <li>Design Patterns:
+          <ul>
+            <li>Observer</li>
+            <li>Strategy</li>
+            <li>Command</li>
+            <li>Singleton</li>
+            <li>Repository (DAO)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>System Architecture</h2>
+      <p>
+        LifeLedger follows the Model–View–Controller (MVC) architecture:
+      </p>
+      <ul>
+        <li><strong>Model:</strong> Account, Transaction, Budget, Reminder, FinanceModel</li>
+        <li><strong>View:</strong> Java Swing GUI (MainFrame and panels)</li>
+        <li><strong>Controller:</strong> MainController, TransactionController, BudgetController</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Project Demo (YouTube)</h2>
+      <p>Replace the video URL below with your real YouTube link:</p>
+
+      <iframe src="https://www.youtube.com/embed/PASTE_YOUR_VIDEO_ID_HERE"
+              allowfullscreen></iframe>
+
+      <a href="https://youtube.com" class="btn" target="_blank">Watch on YouTube</a>
+    </div>
+
+    <div class="card">
+      <h2>Screenshots</h2>
+      <p>Add screenshots of your running application here:</p>
+
+      <!-- Replace src with your uploaded images -->
+      <img src="screenshot1.png" alt="Account Management Screenshot">
+      <img src="screenshot2.png" alt="Transaction Entry Screenshot">
+    </div>
+
+    <div class="card">
+      <h2>Source Code</h2>
+      <p>
+        The full source code, UML diagrams, JUnit tests, documentation, and runnable JAR
+        are stored in a private GitHub repository shared with the instructor.
+      </p>
+      <a href="https://github.com/CHold15/Project" class="btn" target="_blank">View Repository</a>
+    </div>
+
+  </div>
 </body>
 </html>
